@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CalculatorApp">
+  <grid id="27dc6" binding="Home" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="953" height="592"/>
+    </constraints>
+    <properties/>
+    <border type="none" title="d"/>
+    <children>
+      <grid id="f9d61" binding="catInput" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="30c20" layout-manager="GridLayoutManager" row-count="21" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties>
+              <background color="-12580560"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f3d30" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Lucida Sans Typewriter" size="22" style="1"/>
+                  <foreground color="-2579498"/>
+                  <text value="Welcome to the Grade Calculator!"/>
+                </properties>
+              </component>
+              <component id="21191" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="16"/>
+                  <foreground color="-3963198"/>
+                  <text value="Please add the title (referred to as &quot;Category&quot;) and percent weight for each type of assignment in your course's grading."/>
+                </properties>
+              </component>
+              <component id="99c40" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-2502426"/>
+                  <text value="Category Title (example: &quot;Quiz&quot;)"/>
+                </properties>
+              </component>
+              <component id="de53d" class="javax.swing.JTextField" binding="weightInput">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7990170"/>
+                </properties>
+              </component>
+              <component id="2e7a9" class="javax.swing.JTextField" binding="catTitle">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7990170"/>
+                  <opaque value="true"/>
+                </properties>
+              </component>
+              <component id="54e07" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-2502426"/>
+                  <text value="Weight (example: &quot;35%&quot;)"/>
+                </properties>
+              </component>
+              <vspacer id="2a51f">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="52236" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="16"/>
+                  <foreground color="-3963198"/>
+                  <text value="Press the button below to add it to the list of categories."/>
+                </properties>
+              </component>
+              <component id="7bc86" class="javax.swing.JButton" binding="confirmCat">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-3963198"/>
+                  <text value="Confirm Category"/>
+                </properties>
+              </component>
+              <vspacer id="b2fb4">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="30378" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="16"/>
+                  <foreground color="-3963198"/>
+                  <text value="If you would like to view information for any previously added categories, please select the category from the dropdown below."/>
+                </properties>
+              </component>
+              <component id="5a46f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-2502426"/>
+                  <text value="Weight (percent):"/>
+                </properties>
+              </component>
+              <component id="dafa5" class="javax.swing.JComboBox" binding="catList">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7990170"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="e049c" class="javax.swing.JButton" binding="deleteCat">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-7990170"/>
+                  <text value="DELETE?"/>
+                </properties>
+              </component>
+              <component id="8dc88" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="16"/>
+                  <foreground color="-3963198"/>
+                  <text value="If you would like to remove the selected category, please press the delete button below."/>
+                </properties>
+              </component>
+              <vspacer id="c06b5">
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="d6ee3">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="dd7b1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="19" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="18"/>
+                  <foreground color="-3963198"/>
+                  <text value="Once you have completed and reviewed your list of categories, press &quot;Continue&quot; to move on to assignment input."/>
+                </properties>
+              </component>
+              <component id="73878" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-2502426"/>
+                  <text value="Selected Category:"/>
+                </properties>
+              </component>
+              <component id="e189d" class="javax.swing.JButton" binding="contToInput">
+                <constraints>
+                  <grid row="20" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-3963198"/>
+                  <text value="Continue"/>
+                </properties>
+              </component>
+              <vspacer id="8b506">
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="37af7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="18"/>
+                  <foreground color="-3963198"/>
+                  <text value="We will begin by inputting the different types of assignments in this class."/>
+                </properties>
+              </component>
+              <vspacer id="8972c">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="da985" binding="gradeInput" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ee143" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties>
+              <background color="-12580560"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="429c4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Lucida Sans Typewriter" size="22" style="1"/>
+                  <foreground color="-2579498"/>
+                  <text value="Grade Calculator - Assignment Input"/>
+                </properties>
+              </component>
+              <vspacer id="d5b03">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="43347" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="18"/>
+                  <foreground color="-3963198"/>
+                  <text value="In the below fields, please enter the assignment name, its category, and its grade (as a percent)."/>
+                </properties>
+              </component>
+              <vspacer id="d640d">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="1af4b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Nirmala UI" size="16"/>
+                  <foreground color="-3963198"/>
+                  <text value="TIP: You can also take the current averages of each type of assignment and input only those!"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
