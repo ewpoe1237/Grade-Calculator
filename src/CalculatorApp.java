@@ -19,6 +19,10 @@ public class CalculatorApp {
     private JLabel catSelected;
     private JLabel weightSelected;
     private JLabel totalWeight;
+    private JButton continueToOutput;
+    private JTextField assignmentInput;
+    private JTextField assignmentGrade;
+    private JComboBox categorySelect;
 
     static CalculatorApp myGUI = new CalculatorApp();
     static JFrame frame;
@@ -186,13 +190,6 @@ public class CalculatorApp {
     }
 
     public CalculatorApp() {
-        contToInput.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                CardLayout cl = (CardLayout) Home.getLayout();
-                cl.show(Home, "gradeInput");
-            }
-        });
         confirmCat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -280,8 +277,13 @@ public class CalculatorApp {
         contToInput.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                CardLayout cl = (CardLayout) Home.getLayout();
-                cl.show(Home, "gradeInput");
+                if(inputCategories.size() > 0) {
+                    CardLayout cl = (CardLayout) Home.getLayout();
+                    cl.show(Home, "gradeInput");
+                } else {
+                    JOptionPane.showMessageDialog(frame, "Please input some categories before continuing!",
+                            "Category Input Error", JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
     }
